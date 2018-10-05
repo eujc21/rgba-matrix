@@ -3,6 +3,9 @@
 
 import os, os.path
 from PIL import Image
+from time import sleep
+from gpiozero import LED
+from decouple import config
 
 def translateGridToVoltages():
     # Each pixel should be referenced to a voltage value. We will need
@@ -18,7 +21,9 @@ def connectToRGBBoard():
     return False
 
 def testBoardComponents():
-    return False
+    red = LED(config(RED_LED))
+    blue = LED(config(BLUE_LED))
+    green = LED(config(GREEN_LED))
 
 def main():
     img = Image.open('cassette.png')
