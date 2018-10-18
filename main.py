@@ -4,7 +4,7 @@
 import os, os.path
 from PIL import Image
 from time import sleep
-from gpiozero import LED
+#from gpiozero import LED
 from decouple import config
 
 # Pulse Width Modulation will control the varying voltages per RGB LED
@@ -28,27 +28,20 @@ def testBoardComponents():
     """
     Testing RGBA component from microcontroller.
     """
-    red = LED(config(RED_LED))
-    blue = LED(config(BLUE_LED))
-    green = LED(config(GREEN_LED))
-    while True:
-        red.on()
-        blue.on()
-        green.on()
-        sleep(1)
-        red.off()
-        blue.off()
-        green.off()
-        sleep(1)
+    return False
 
 def main():
-    img = Image.open('cassette.png')
+    img = Image.open('images/cassette.png')
     pix = img.load()
     xImgSize = img.size[0]
     yImgSize = img.size[1]
+    print(xImgSize)
+    print(yImgSize)
+    imageList= []
     for x in range(xImgSize):
         for y in range(yImgSize):
-            print(pix[x,y])
-    return False
+            imageList.extend(pix[x,y])
+
+    print(imageList[1])
 
 main()
