@@ -2,3 +2,6 @@
 - https://www.monkeylectric.com/monkey_light_pro/
 - http://math.hws.edu/graphicsbook/c2/s1.html
 - https://gpiozero.readthedocs.io/en/stable/recipes.html
+- https://learn.adafruit.com/neopixels-on-raspberry-pi/software
+- https://core-electronics.com.au/tutorials/ws2812-addressable-leds-raspberry-pi-quickstart-guide.html
+- 

@@ -35,8 +35,6 @@ def main():
     pix = img.load()
     xImgSize = img.size[0]
     yImgSize = img.size[1]
-    print(xImgSize)
-    print(yImgSize)
     imageList= []
     for x in range(xImgSize):
         for y in range(yImgSize):
