@@ -8,6 +8,7 @@ numpy = "*"
 pillow = "*"
 gpiozero = "*"
 python-decouple = "*"
+sh = "*"
 
 [dev-packages]
 

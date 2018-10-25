@@ -31,6 +31,11 @@ def testBoardComponents():
     return False
 
 def main():
+    """main loop
+    1) Test connection with microcontroller.
+    2) Initialize default animation.
+    3) Display Configured animation.
+    """
     img = Image.open('images/cassette.png')
     pix = img.load()
     xImgSize = img.size[0]
