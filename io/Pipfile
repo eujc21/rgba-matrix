@@ -9,6 +9,7 @@ pillow = "*"
 gpiozero = "*"
 python-decouple = "*"
 sh = "*"
+django = "*"
 
 [dev-packages]
 

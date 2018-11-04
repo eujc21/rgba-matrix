@@ -8,7 +8,7 @@ from time import sleep
 from decouple import config
 
 # Pulse Width Modulation will control the varying voltages per RGB LED
-# There will be a need to know a color diagram of how the micture of values
+# There will be a need to know a color diagram of how the picture of values
 # create specific colors.
 
 def translateGridToVoltages():
